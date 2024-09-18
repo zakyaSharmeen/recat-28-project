@@ -1,17 +1,15 @@
-import './App.css';
-import Home from './Components/Home';
-import {ProductProvider} from './Context';
+import React from 'react'
+import Home from './Components/Home'
 
 
 function App() {
   return (
-   <> 
-    <h1>hii zakya</h1>
-    <ProductProvider/>
+    <>
     <Home/>
+   
 
-   </> 
-  );
+    </>
+  )
 }
 
-export default App;
+export default App
