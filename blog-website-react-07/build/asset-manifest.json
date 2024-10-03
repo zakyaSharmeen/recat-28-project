@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/zakyaSharmeen/blog-reat-website/static/css/main.a96aecd9.css",
+    "main.js": "/zakyaSharmeen/blog-reat-website/static/js/main.3933cb01.js",
+    "index.html": "/zakyaSharmeen/blog-reat-website/index.html",
+    "main.a96aecd9.css.map": "/zakyaSharmeen/blog-reat-website/static/css/main.a96aecd9.css.map",
+    "main.3933cb01.js.map": "/zakyaSharmeen/blog-reat-website/static/js/main.3933cb01.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a96aecd9.css",
+    "static/js/main.3933cb01.js"
+  ]
+}
