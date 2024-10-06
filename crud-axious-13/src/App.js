@@ -1,10 +1,12 @@
 import React from 'react'
-import Practice from './practice-axious/Practice'
 
 function App() {
   return (
     <div>
-      <Practice/>
+      <h1>hii zakya u did it</h1>
+     
+
+
     </div>
   )
 }

@@ -30,25 +30,9 @@ function Practice() {
 
 
   // async await
-  // const getApiData =  (async () => {
-  //  try{
-  //   const res = await axios.get("https://jsonplaceholder.typicode.com/posts")
-  //   console.log(res.data);
-  // setMyData(res.data)  
-  //  }catch(error){
-  //   setError(error.message)
-  //  }  
-  // })
-
-  // useEffect(() =>{
-  //   getApiData()
-  // })
-
-
-  // effective method---by create a base api hold called const API 
-   const getApiData =  (async (url) => {
+  const getApiData =  (async () => {
    try{
-    const res = await axios.get(url)
+    const res = await axios.get("https://jsonplaceholder.typicode.com/posts")
     console.log(res.data);
   setMyData(res.data)  
    }catch(error){
@@ -56,10 +40,26 @@ function Practice() {
    }  
   })
 
-
   useEffect(() =>{
-    getApiData(`${API}/posts`)
-  })
+    getApiData()
+  },[])
+
+
+  // effective method---by create a base api hold called const API 
+//    const getApiData =  (async (url) => {
+//    try{
+//     const res = await axios.get(url)
+//     console.log(res.data);
+//   setMyData(res.data)  
+//    }catch(error){
+//     setError(error.message)
+//    }  
+//   })
+
+
+//   useEffect(() =>{
+//     getApiData(`${API}/posts`)
+//   })
 
 
   return (
