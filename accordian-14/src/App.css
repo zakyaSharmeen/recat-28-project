@@ -15,11 +15,22 @@ input {
   letter-spacing: 0.12rem;
   line-height: 1.5;
   color: #fff;
+  list-style: none;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3.4rem;
+  text-decoration: underline;
+  font-family: "syne";
+  letter-spacing: 0.1rem;
 }
 
 button {
-  padding: 0.8rem 3.2rem;
+  padding: 0rem 1.2rem;
   border-radius: 0.3rem;
+  height: 4rem;
   cursor: pointer;
   border: 0;
   background-color: hsl(160, 80%, 48%);
@@ -33,6 +44,10 @@ button {
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 
 button:hover {
@@ -43,76 +58,55 @@ button:hover {
 
 /* ================================================ */
 
-.main-section {
-  width: 100%;
-  height: auto;
+.section-accordion {
+  width: 60%;
+  margin: auto;
   display: flex;
   flex-direction: column;
+  gap: 1.6rem;
   justify-content: center;
-  align-items: center;
-}
+  margin-top: 6.4rem;
 
-.section-form {
-  padding: 1.6rem;
-  background-color: #212f3d;
-  border-radius: 0.6rem;
-  -webkit-border-radius: 0.6rem;
-  -moz-border-radius: 0.6rem;
-  -ms-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
-  margin: 3.2rem auto;
-
-  form {
-    display: flex;
-    gap: 1.2rem;
-  }
-
-  & input {
-    width: 24rem;
-    color: #212f3d;
-    border: 0.1rem solid grey;
-    outline: none;
+  & li {
+    background-color: #212f3c;
+    padding: 1.6rem;
     border-radius: 0.3rem;
     -webkit-border-radius: 0.3rem;
     -moz-border-radius: 0.3rem;
     -ms-border-radius: 0.3rem;
     -o-border-radius: 0.3rem;
-    padding: 0.8rem 1.2rem;
+    list-style-position: inside;
+    border-left: 0.2rem solid #fff;
+    list-style: none;
   }
-}
 
-.section-post {
-  width: 90%;
+  & .active-btn {
+    background-color: #e74c3c;
+    color: #fff;
 
-  & ol {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3.2rem;
-
-    & li {
-      background-color: #212f3c;
-      padding: 1.6rem;
-      border-radius: 0.3rem;
-      -webkit-border-radius: 0.3rem;
-      -moz-border-radius: 0.3rem;
-      -ms-border-radius: 0.3rem;
-      -o-border-radius: 0.3rem;
-      list-style-position: inside;
-      border-left: 0.2rem solid #fff;
-    }
-
-    & .btn-delete {
-      background-color: #e74c3c;
-
-      &:hover {
-        color: hsl(0, 0%, 100%);
-        box-shadow: rgb(167, 54, 13) 0px 7px 19px 0px;
-      }
+    &:hover {
+      color: hsl(0, 0%, 100%);
+      box-shadow: rgb(167, 54, 13) 0px 7px 19px 0px;
     }
   }
 }
 
-/* @media screen and (max-width: 768px) {
+/* //extra adding accordion-grid */
+
+.accordion-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-question {
+  font-weight: bold;
+  font-family: "Syne";
+  letter-spacing: 0.1rem;
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 980px) {
   .section-form form {
     flex-direction: column;
     justify-content: center;
@@ -124,8 +118,8 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   .section-post ol {
     grid-template-columns: repeat(1, 1fr);
   }
-} */
+}

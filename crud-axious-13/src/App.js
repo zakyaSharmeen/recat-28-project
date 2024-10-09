@@ -1,13 +1,14 @@
 import React from 'react'
+import Post from './crud-app/compoent/Post'
 
 function App() {
   return (
-    <div>
-      <h1>hii zakya u did it</h1>
-     
+    <>
+    <section className='main-section'>
+      <Post/>
 
-
-    </div>
+    </section>
+    </>
   )
 }
 
