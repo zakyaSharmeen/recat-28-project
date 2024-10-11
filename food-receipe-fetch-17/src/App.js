@@ -1,3 +1,6 @@
+// api used
+// https://www.themealdb.com/api.php  
+
 import '../src/components/style.css';
 import Meal from './components/Meal';
 import { Routes, Route } from "react-router-dom";

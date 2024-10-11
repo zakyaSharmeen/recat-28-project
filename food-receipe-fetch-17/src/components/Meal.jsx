@@ -6,7 +6,7 @@ import MealsItem from './MealsItem';
 import RecipeIndex from './RecipeIndex';
 
 function Meal() {
-    const apiUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?f=a';
+    const apiUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?f=b';
 
     const [item, setItem] = useState([]);
     const [show, setShow] = useState(false);
