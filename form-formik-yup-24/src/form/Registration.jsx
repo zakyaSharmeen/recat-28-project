@@ -161,9 +161,9 @@ function Registration() {
                     </button>
                   </div>
                 </form>
-                <p className="sign-up">
+                {/* <p className="sign-up">
                   Already have an account? <a href="#">Sign In now</a>
-                </p>
+                </p> */}
               </div>
               <div className="modal-right">
                 <img
