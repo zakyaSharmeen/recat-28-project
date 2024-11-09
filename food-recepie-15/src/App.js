@@ -1,13 +1,24 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import MainPage from './component/MainPage';
+import MealInfo from './component/MealInfo';
 
 
 
 function App() {
   return (
     <>
-    <div>
-      <h1>hii zakya </h1>
-    </div>
+   
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/:mealid" element={<MealInfo />}></Route>
+
+          
+        
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }
