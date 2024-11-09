@@ -5,14 +5,14 @@ import React, { useState, useEffect } from 'react';
 import MealCards from './MealCards';
 
 function MainPage() {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState([]); //empty ary becz here the data will store
     const [search, setSearch] = useState('cake'); // Default search term
     const [loading, setLoading] = useState(false); // Loading state
     const [error, setError] = useState(null); // Error handling state
 
     // Function to fetch meals based on the search term
     const myFun = async () => {
-        setLoading(true); // Set loading to true when fetching
+        setLoading(true); 
         setError(null); // Reset previous errors
 
         try {
@@ -20,7 +20,7 @@ function MainPage() {
             const jsonData = await response.json();
 
             if (jsonData.meals) {
-                  // console.log(jsonData.meals);
+                
 
        // console.log(jsonData.meals);
                 setData(jsonData.meals); // Update data if meals found
